@@ -2,7 +2,7 @@
 let monto;
 //bucle para pedir el monto para la transaccion
 for (let i = 1; i < 2; i++) {
-    monto = parseInt(prompt(`Ingrese el numero para hacer la tabla`));
+    monto = parseInt(prompt(`Ingrese el numero para su transaccion`));
     //primero se valida si es numero, el numero debe ser mayor o igual a 10 y debe ser divisible entre 10
     if (isNaN(monto) || monto < 10 || monto % 10 !== 0) {
         alert(`Formato Invalido, ingrese de nuevo`);
