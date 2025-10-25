@@ -1,7 +1,6 @@
 // 1. Se pide el numero
 let numeroString = prompt("Ingresa un número para verificar si es Armstrong:");
-
-// Se valida que no este vacion
+// Se valida que no este vacio
 if (numeroString === null || numeroString.trim() === "")  {
     alert("Error: No ingresaste ningún valor.");
 } else {
@@ -14,18 +13,12 @@ if (numeroString === null || numeroString.trim() === "")  {
         let digitoString = numeroString[i];
         // convertimos el digito a numero
         let digito = parseInt(digitoString);
-        
-        // 3. Sumar la potencia
+        //Se suma 
         suma += digito ** n_digitos;
-        
-        // 4. Moverse al siguiente dígito
         i++;
         
     } while (i < n_digitos); // Repetir mientras 'i' sea menor que el total de dígitos
-    
-
     let numeroOriginal = parseInt(numeroString);
-    
     if (suma === numeroOriginal) {
         alert(` ${numeroOriginal} si es un número de Armstrong.\n\nCálculo: ${suma}\nDígitos (n): ${n_digitos}`);
     } else {
