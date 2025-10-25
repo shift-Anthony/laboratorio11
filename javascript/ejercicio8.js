@@ -15,10 +15,10 @@ for (let i = 1; i < 2; i++) {
             count = 0;
             //En este for se recorre desde 1 hasta "i"
             for (let j = 1; j <= i; j++) {
-                //Si el resultado es 0 se suma, los primos solo deben sumar 2 
+                //Si el resultado es 0 se suma.
                 if (i % j === 0) count++;
             }
-            //Aqui se valida que sea primo, los primos solo tienen dos divisores
+            //Aqui se valida que sea primo, el valor de count debe ser 2 si el numero es primo
             if (count === 2) primos = primos + `,${i}`;
         }       //Se muestra la lista
         alert(`Los numeros primos desde 2 a ${numero} son: \n` + primos)
