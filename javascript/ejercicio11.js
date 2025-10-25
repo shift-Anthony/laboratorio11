@@ -16,7 +16,6 @@ if (numeroString === null || numeroString.trim() === "")  {
         //Se suma 
         suma += digito ** n_digitos;
         i++;
-        
     } while (i < n_digitos); // Repetir mientras 'i' sea menor que el total de dígitos
     let numeroOriginal = parseInt(numeroString);
     if (suma === numeroOriginal) {
